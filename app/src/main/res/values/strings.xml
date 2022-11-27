@@ -2,4 +2,7 @@
     <string name="app_name">CVBuilder</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_qualification_description">
+        Knowledgeable iOS software engineer with 3 years of hands-on experience playing key role in development of key business applications as member of elite technical teams. Hands-on expertise in Swift, ReactJS, Redux, React Native, Storyboard, and Data Structures and Frameworks. History of success delivering outstanding results in fast-paced, deadline-driven TDD, DDD, and Agile Scrum environments.
+    </string>
 </resources>
