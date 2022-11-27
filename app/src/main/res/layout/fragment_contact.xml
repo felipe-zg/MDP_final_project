@@ -5,10 +5,62 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ContactFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Contact" />
+        android:orientation="vertical"
+        android:padding="10dp">
 
+        <Button
+            android:id="@+id/contact_btn_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:textColor="#000"
+            android:elevation="0dp"
+            android:text="101 20th Ave N, Nashville, TN 37203" />
+
+        <Button
+            android:id="@+id/contact_btn_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telephone"
+            android:background="#2196F3"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/contact_btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:background="#000000"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/contact_btn_linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linkedin"
+            android:background="#00BCD4"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/contact_btn_instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:background="#D40098"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
 </FrameLayout>
