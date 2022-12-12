@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/work_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/work_form_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/work_form_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Client"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/work_form_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/work_form_startdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/work_form_enddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End date"
+        android:layout_marginBottom="3dp"/>
+
+</LinearLayout>
