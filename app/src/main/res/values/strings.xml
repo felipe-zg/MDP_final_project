@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name">CVBuilder</string>
+    <string name="app_name">Felipe\'s CV</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_qualification_description">
         Knowledgeable iOS software engineer with 3 years of hands-on experience playing key role in development of key business applications as member of elite technical teams. Hands-on expertise in Swift, ReactJS, Redux, React Native, Storyboard, and Data Structures and Frameworks. History of success delivering outstanding results in fast-paced, deadline-driven TDD, DDD, and Agile Scrum environments.
+    </string>
+    <string name="about_me_description_introduction">
+        I\'m a software engineer with 5 years of hands on experience working with react native, typesrcript, redux, styled-components and many more of the most known and used tools and framework for mobile and web development.
+    </string>
+    <string name="about_me_description_strenghs">
+        I\'m a faster leaner, with good communication and a team player. Getting stuff done is what I like to do everyday.
+    </string>
+    <string name="about_me_description_education">
+        I\'m graduated at Estacio de Sa university in Information systems in 2020, and I\'m currently getting my Master\'s degree in Computer Science at Maharishi International University.
     </string>
 </resources>
