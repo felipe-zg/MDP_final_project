@@ -1,6 +1,8 @@
 package com.example.cvbuilder.fragments
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
@@ -9,11 +11,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.example.cvbuilder.MainActivity
 import com.example.cvbuilder.R
-import java.util.*
 
 
 class ContactFragment : Fragment() {
+    private lateinit var sharedPreference: SharedPreferences
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        sharedPreference = this.requireActivity().getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,7 +33,6 @@ class ContactFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         // OPEN GOOGLE MAPS
         getView()?.findViewById<Button>(R.id.contact_btn_address)?.setOnClickListener {
             val lat = "36.151552"
@@ -59,6 +67,21 @@ class ContactFragment : Fragment() {
         // OPEN INSTAGRAM
         getView()?.findViewById<Button>(R.id.contact_btn_instagram)?.setOnClickListener {
             openAppOrBrowser("instagram://felipezeba", "http://instagram.com/_u/felipezeba")
+        }
+
+        // OPEN INSTAGRAM
+        getView()?.findViewById<Button>(R.id.contact_btn_logout)?.setOnClickListener {
+            val editor = sharedPreference.edit()
+            editor.remove("email")
+            editor.remove("password")
+            editor.remove("username")
+            editor.apply()
+            val intent = Intent(
+                this.requireContext(),
+                MainActivity::class.java
+            )
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
         }
     }
 
